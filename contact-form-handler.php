@@ -16,5 +16,6 @@
     $email_body.= "User Message:" .$message."\r\n";
    
     mail($to, $email_subject, $email_body);
-    
+    header( 'Location: /index.html' ) ;  
+
 ?>
