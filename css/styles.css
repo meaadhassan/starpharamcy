@@ -103,43 +103,51 @@
     # Contact Us
     --------------------------------------------------------------*/
     form{
-        margin-top:40px;
+        margin-top:25px;
+    }
+    .form-group{
+        margin-bottom:1.5em;
+        transition:all .3s;
     }
     .form-control{
+        box-shadow:none;
+        border-radius:0;
+        border-color:#ccc;
+        border-style:none none solid none;
         width:100%;
-        border:none;
+        font-size:1.25em;
+        transition:all .6s;
+    }
+    .form-control::placeholder{
+        color:#aaa;
+    }
+    .form-control:focus{
+        box-shadow:none;
+        border-color:var(--font-hover-color);
         outline:none;
-        border-bottom: 1px solid gray;
-        color:black;
-        font-size:18px;
     }
-    .form-control.select{
-        width:100%;
-        border:none;
-        padding-top:1px;
-        outline:none;
-        border-bottom: 1px solid black;
-        color:black;
+    .form-group:focus-within{
+        transform:scale(1.1,1.1);
     }
-    input{
-        height:45px;
+    
+    .form-control:invalid:focus{
+        border-color:red;
     }
-    select{
-        height:65px;
+    .form-control:valid:focus{
+        border-color:green;
     }
-    form .submit{
-        background: #ff8000;
-        border-color:transparent;
-        color:white;
-        font-size:20px;
-        font-weight:bold;
-        letter-spacing: 2px;
-        height:50px;
-        margin-top:20px;
+    .btn{
+        background: 0 0 #fff;
+        border:1px solid #aaa;
+        border-radius:3px;
+        color:var(--font-color);
+        font-size:1em;
+        padding:10 50px;
+        text-transform:uppercase;
     }
-    form .submit:hover{
-        background-color: red;
-        cursor: pointer;
+    .btn:hover{
+        border-color:var(--font-hover-color);
+        color:var(--font-hover-color);
     }
     .table{
         font-size: 15px;
