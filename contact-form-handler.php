@@ -7,14 +7,8 @@
     $to= 'meaadhassan09@gmail.com';
     $headers= "From: ". $visitor_email;
 
-    $email_subject= "New Website Form Submission about ".$message;
-    $email_body= "Name: ".$name.".\n\n Message".$message
+    $email_subject= "New Website Form Submission about ";
 
-<<<<<<< HEAD
-    mail($to, $email_subject, $email_body,$headers);
-    header( 'Location: /index.html' ) ;  
-
-=======
     $email_body= "";
 
     $email_body.= "User Name: ".$name."\r\n";
@@ -24,5 +18,4 @@
    
     mail($to, $email_subject, $email_body);
     
->>>>>>> parent of aed7196... Update contact-form-handler.php
 ?>
