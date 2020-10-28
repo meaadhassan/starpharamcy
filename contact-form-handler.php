@@ -1,6 +1,4 @@
 <?php
-if(isset($_POST['submit']))
-{
     $name = $_Post['name'];
     $visitor_email = $_POST['email'];
     $subject = $_Post['subject'];
@@ -14,5 +12,5 @@ if(isset($_POST['submit']))
 
     mail($to, $email_subject, $email_body,$headers);
     header( 'Location: /index.html' ) ;  
-}
+
 ?>
